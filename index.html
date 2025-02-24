@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BloxTools - Home</title>
+    <title>Document</title>
 
     <style>
         @font-face {
@@ -104,18 +104,63 @@
             box-shadow: 0px 0px 24px 0px #0000000D;
 
         }
+
+        .footer-gradient-styles {
+            background: linear-gradient(180deg, #6999FC 0%, #4983FB 100%);
+            border: 2px solid #FFFFFF1A;
+            border-radius: 22px;
+        }
+
+        .footer-text-styles {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(195, 215, 255, 0.75) 100%);
+            -webkit-background-clip: text;
+            /* For Safari */
+            background-clip: text;
+            color: transparent;
+        }
+
+        .footer-button-styles {
+            background: linear-gradient(180deg, #FFFFFF 0%, #E1E1E1 100%);
+            border: 2px solid #0000001A;
+            border-radius: 14px;
+        }
+
+        .footer-text-button-styles {
+            background: linear-gradient(180deg, #6999FC 0%, #4983FB 100%);
+            -webkit-background-clip: text;
+            /* For Safari */
+            background-clip: text;
+            color: transparent;
+        }
     </style>
+    <script>
+        module.exports = {
+            theme: {
+                extend: {},
+                screens: {
+                    sm: "640px",
+                    md: "768px",
+                    'base': '920px',
+                    lg: "1024px",
+                    xl: "1280px",
+                },
+            },
+            plugins: [],
+        };
+
+    </script>
+
 </head>
 
 <body class="sf-regular">
-    <main class="px-8 lg:px-96 flex justify-center flex-col items-center">
+    <main class="px-2 lg:px-64 px-0 flex justify-center flex-col items-center">
         <header class=" w-full rounded-3xl flex justify-center items-center mt-8">
             <nav class="flex justify-between h-16 w-full items-center p-4 component-nav">
                 <div>
                     <p class="sf-light text-xl text-white">Overview</p>
                 </div>
                 <div>
-                    <ul class="sm:flex hidden text-lg text-gradient-nav gap-6 sf-light">
+                    <ul class="md:flex hidden text-lg text-gradient-nav gap-6 sf-light">
                         <li class="flex gap-1">
                             <img src="./assets/Icons/home.svg" alt="Home">
                             <a href="#home">Home</a>
@@ -137,7 +182,7 @@
                         </li>
                     </ul>
 
-                    <button class="sm:hidden block">
+                    <button class="md:hidden block">
 
                         <img src="./assets/Icons/menu.svg" class="" alt="">
                     </button>
@@ -155,11 +200,12 @@
 
             <div class="text-center flex justify-center items-center flex-col mt-8 space-y-4">
                 <h1 class="text-6xl text-white sf-regular font-semibold">Bloxtools</h1>
-                <p class="text-xl sm:w-3/5 text-gradient-main">Easy to use tools, with detailed instructions on how to use
+                <p class="text-xl md:w-3/5 text-gradient-main">Easy to use tools, with detailed instructions on how to
+                    use
                     them! These tools consist of a shirt copier, game copier, and a follower botter. We made all this
                     just to make roblox simple again!</p>
                 <button
-                    class="button-gradient-main flex text-xl sm:w-44 w-full text-center text-white rounded-lg p-2 justify-center gap-2">
+                    class="button-gradient-main flex text-xl md:w-48 w-full text-center text-white rounded-lg p-2 justify-center gap-2">
                     <p class="text-lg">Start</p>
 
                     <img src="./assets/Icons/arrow.svg" alt="Arrow">
@@ -182,9 +228,9 @@
 
             <!-- TODO: just add space-y-(amount) instead of having mt-6 -->
             <section class="w-full sf-regular">
-                <div class="cards w-full flex justify-center items-center gap-2 md:flex-row flex-col">
+                <div class="cards w-full flex justify-center items-center gap-6 md:flex-row flex-col">
 
-                    <div class="flex-col min-h-[450px] justify-between card md:w-1/3 w-full p-4 flex mt-12 rounded-lg">
+                    <div class="flex-col min-h-[450px] justify-between card lg:w-1/3 w-full p-4 flex mt-12 rounded-lg">
                         <div class="flex badge component-badge w-full h-12 items-center sf-regular  justify-center ">
                             <img src="./assets/Icons/tool.svg" alt="Tools">
                             <p class="text-gradient-nav">Roblox Tools</p>
@@ -226,7 +272,8 @@
                         </div>
                     </div>
 
-                    <div class="flex-col min-h-[450px] justify-between card md:w-1/3 w-full p-4 flex mt-12 rounded-lg space-y-2">
+                    <div
+                        class="flex-col min-h-[450px] justify-between card lg:w-1/3 w-full p-4 flex mt-12 rounded-lg space-y-2">
                         <div class="flex badge-blue justify-center h-12 items-center sf-regular">
                             <img src="./assets/Icons/blue-tool.svg" alt="Tools">
                             <p class="text-white">Roblox Tools</p>
@@ -267,7 +314,7 @@
 
                     </div>
 
-                    <div class="flex-col min-h-[450px] justify-between card md:w-1/3 w-full p-4 flex mt-12 rounded-lg">
+                    <div class="flex-col min-h-[450px] justify-between card lg:w-1/3 w-full p-4 flex mt-12 rounded-lg">
                         <div class="flex badge component-badge w-full h-12 items-center sf-regular  justify-center ">
                             <img src="./assets/Icons/tool.svg" alt="Tools">
                             <p class="text-gradient-nav">Roblox Tools</p>
@@ -318,12 +365,12 @@
                 <img src="./assets/Icons/question.svg" alt="FAQ">
                 <p class="text-gradient-nav">Questions and Answers</p>
             </div>
-        
+
             <div class="mt-12 text-center">
                 <h1 class="text-6xl text-white sf-regular font-semibold">Frequently Asked Questions</h1>
                 <p class="text-xl w-3/5 text-gradient-main mx-auto">Here are some common questions people ask us.</p>
             </div>
-        
+
             <div class="w-full mt-8 space-y-4">
                 <!-- FAQ Item 1 -->
                 <div class="faq-item bg-[#0F0F10] p-4 rounded-lg border border-[#181819]">
@@ -335,7 +382,7 @@
                         Our tools come with step-by-step instructions to guide you.
                     </div>
                 </div>
-        
+
                 <!-- FAQ Item 2 -->
                 <div class="faq-item bg-[#0F0F10] p-4 rounded-lg border border-[#181819]">
                     <button class="faq-question w-full flex justify-between items-center text-xl text-white sf-light">
@@ -346,7 +393,7 @@
                         Yes, all our tools are completely free!
                     </div>
                 </div>
-        
+
                 <!-- FAQ Item 3 -->
                 <div class="faq-item bg-[#0F0F10] p-4 rounded-lg border border-[#181819]">
                     <button class="faq-question w-full flex justify-between items-center text-xl text-white sf-light">
@@ -364,33 +411,39 @@
                         <img src="./assets/Icons/arrow.svg" class="w-5 transition-transform duration-300" alt="Toggle">
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 text-gradient-main mt-2">
-                        Absolutely! 
+                        Absolutely!
                     </div>
                 </div>
             </div>
         </section>
-        
+
+        <section>
+
+
+        </section>
+
+
         <script>
             document.querySelectorAll('.faq-question').forEach(button => {
                 button.addEventListener('click', () => {
                     const answer = button.nextElementSibling;
                     const allAnswers = document.querySelectorAll('.faq-answer');
                     const allIcons = document.querySelectorAll('.faq-question img');
-        
+
                     // Close all other answers
                     allAnswers.forEach(a => {
                         if (a !== answer) {
                             a.style.maxHeight = null;
                         }
                     });
-        
+
                     // Reset all icons
                     allIcons.forEach(icon => {
                         if (icon !== button.querySelector('img')) {
                             icon.style.transform = "rotate(0deg)";
                         }
                     });
-        
+
                     // Toggle current FAQ
                     if (answer.style.maxHeight) {
                         answer.style.maxHeight = null;
@@ -402,10 +455,31 @@
                 });
             });
         </script>
-        
-
-
     </main>
+
+    <section class="p-2 mb-12">
+
+        <div class="footer-gradient-styles relative">
+            <img src="/assets/Icons/bg.svg" alt="Background">
+            <div class="absolute top-0 w-full h-full flex justify-center items-center flex-col">
+                <h1 class="text-6xl text-white sf-regular font-semibold">Looking for contact?</h1>
+                <p class="text-2xl footer-text-styles">Check out some ways to contact us</p>
+
+                <div class="flex gap-6 sm:flex-row flex-col">
+                    <button class="footer-button-styles text-xl px-16 py-2 gap-2 flex justify-center items-center">
+                        <p class="footer-text-button-styles">Discord</p>
+                        <img src="./assets/Icons/arrow.svg" alt="arrow">
+                    </button>
+                    <button class="footer-button-styles text-xl px-16 py-2 gap-2 flex justify-center items-center">
+                        <p class="footer-text-button-styles">Online</p>
+                        <img src="./assets/Icons/arrow.svg" alt="arrow">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
